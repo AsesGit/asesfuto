@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="title" content="Marvin's Electronic Inventory Management System">
+  <meta name="description" content="Marvin's Electronic Inventory Management System streamlines inventory tracking with real-time monitoring, barcode scanning, and RFID integration for efficient stock control.">
+  <meta name="keywords" content="inventory management, Marvin's inventory system, electronic inventory, stock tracking, barcode scanning, RFID inventory, warehouse management">
+  <meta name="author" content="Marvin's Inventory Solutions">
+  <meta name="robots" content="index, follow">
+  <!-- Open Graph Tags for Social Media -->
+  <meta property="og:title" content="Marvin's Electronic Inventory Management System">
+  <meta property="og:description" content="Optimize your inventory with Marvin's Electronic Inventory Management System, featuring real-time tracking, barcode, and RFID support for seamless stock management.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://idikaeliada.github.io/Mervin-Electricals/">
+  <meta property="og:image" content="https://idikaeliada.github.io/Mervin-Electricals//images/inventory-system-preview.jpg">
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Marvin's Electronic Inventory Management System">
+  <meta name="twitter:description" content="Discover Marvin's Electronic Inventory Management System for efficient inventory tracking with barcode and RFID technology.">
+  <meta name="twitter:image" content="https://idikaeliada.github.io/Mervin-Electricals//images/inventory-system-preview.jpg">
+
+  <link rel="stylesheet" href="./output.css">
+</head>
+<body class="bg-gray-50 dark:bg-gray-900">
+  <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+  <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+    <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo">
+    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Marvin</span>
+  </a>
+  <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+      <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+    </button>
+  </div>
+  <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+    <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+      <li>
+        <a href="marvin.html" class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Dashboard</a>
+      </li>
+      <li>
+        <a href="product.html" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Product</a>
+      </li>
+      <li>
+        <a href="products.html" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Sales</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Suppliers</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Reporting</a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>
+
+<section class=" py-8 mt-15 antialiased md:py-12">
+  <div class="mx-auto max-w-screen-xl px-4 2xl:px-0">
+    <!-- Heading & Filters -->
+    <div class="mb-4 items-end justify-between space-y-4 sm:flex sm:space-y-0 md:mb-8">
+      <div>
+        <h2 class="mb-4 text-xl font-semibold text-gray-900 dark:text-white sm:text-2xl">Dashboard</h2>
+        <nav class="flex" aria-label="Breadcrumb">
+          <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
+            <li class="inline-flex items-center">
+              <a href="marvin.html" class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-primary-600 dark:text-gray-400 dark:hover:text-white">
+                <svg class="me-2.5 h-3 w-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z" />
+                </svg>
+                Home
+              </a>
+            </li>
+            <li aria-current="page">
+              <div class="flex items-center">
+                <svg class="h-5 w-5 text-gray-400 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7" />
+                </svg>
+                <span class="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400 md:ms-2">Dashboard </span>
+              </div>
+            </li>
+          </ol>
+        </nav>
+        
+      </div>
+      
+  
+</section>
+
+
+<script src="scripts/utils/sidebar.js"></script>
+
+</body>
+</html>
