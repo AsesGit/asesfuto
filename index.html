@@ -22,10 +22,16 @@
   <meta name="twitter:image" content="https://i.ibb.co/DfxrJxYY/Screenshot-2025-09-03-131615.png">
   <title>Marvin's Electronic Inventory Management System</title>
 
+
+  <!--tailwind-->
   <link rel="stylesheet" href="./output.css">
   
   <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!--Aos-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  
   
   <style type="text/css" media="all">
   /* Enable smooth scrolling for the entire page */
@@ -71,11 +77,11 @@
     <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Marvin</span>
   </a>
   <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-      <a type="link" href="marvin.html" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get started</a>
-      <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+    <a type="link" href="marvin.html" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get started</a>
+    <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
         <span class="sr-only">Open main menu</span>
         <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
         </svg>
     </button>
   </div>
@@ -98,8 +104,8 @@
   </div>
 </nav>
 
-<section class="mt-15" id="hero">
-  <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+  <section class="mt-15" id="hero" data-aos="fade-right">
+    <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
       <div class="mr-auto place-self-center lg:col-span-7">
           <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">Marvin Electricals Inventory System</h1>
           <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">Enabling data driven decision making aimed at providing the store manager with accurate reports onsales trends and stock levels.</p>
@@ -112,121 +118,119 @@
           </a> 
       </div>
       <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-          <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png" alt="mockup">
+        <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png" alt="mockup">
       </div>                
-  </div>
-</section>
+    </div>
+  </section>
 
-<section class="">
-  <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+  <section class=""  data-aos="fade-up">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
       <div class="max-w-screen-md mb-8 lg:mb-16">
-          <h2 class="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 dark:text-white">Designed for business teams like yours</h2>
-          <p class="text-gray-500 sm:text-xl dark:text-gray-400">Eliminate labour intensive tasking which will savetime,reduce cost and encourage
-maximum productivity.</p>
+        <h2 class="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 dark:text-white">Designed for business teams like yours</h2>
+        <p class="text-gray-500 sm:text-xl dark:text-gray-400">Eliminate labour intensive tasking which will savetime,reduce cost and encourage maximum productivity.</p>
       </div>
       <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
-          <div>
-              <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-[#dbeafe] lg:h-12 lg:w-12 dark:bg-[#1e3a8a]">
-                  <svg class="w-5 h-5 text-[#2563eb] lg:w-6 lg:h-6 dark:text-[#93c5fd]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M5 3a2 2 0 00-2 2v2a2 2 0 00.586 1.414L6 10.828V16a2 2 0 002 2h4a2 2 0 002-2v-5.172l2.414-2.414A2 2 0 0017 7V5a2 2 0 00-2-2H5zm2 4h6v2H7V7zm2 4h2v5H9v-5z"/></svg>
-              </div>
-              <h3 class="mb-2 text-xl font-bold dark:text-white">Product Management:</h3>
-              <p class="text-gray-500 dark:text-gray-400">Easily Add, view , update,and delete product information.</p>
-          </div>
-          <div>
-              <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-[#dbeafe] lg:h-12 lg:w-12 dark:bg-[#1e3a8a]">
-                  <svg class="w-5 h-5 text-[#2563eb] lg:w-6 lg:h-6 dark:text-[#93c5fd]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd"></path><path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"></path></svg>
-              </div>
-              <h3 class="mb-2 text-xl font-bold dark:text-white">Inventory Control:</h3>
-              <p class="text-gray-500 dark:text-gray-400">Real-time tracking of stock levels. Automatically update quantities when new stock arrives or a sale is made.</p>
-          </div>
-          <div>
-              <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-[#dbeafe] lg:h-12 lg:w-12 dark:bg-[#1e3a8a]">
-                <svg class="w-5 h-5 text-[#2563eb] lg:w-6 lg:h-6 dark:text-[#93c5fd]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                  <path fill-rule="evenodd" d="M20.29 8.567c.133.323.334.613.59.85v.002a3.536 3.536 0 0 1 0 5.166 2.442 2.442 0 0 0-.776 1.868 3.534 3.534 0 0 1-3.651 3.653 2.483 2.483 0 0 0-1.87.776 3.537 3.537 0 0 1-5.164 0 2.44 2.44 0 0 0-1.87-.776 3.533 3.533 0 0 1-3.653-3.654 2.44 2.44 0 0 0-.775-1.868 3.537 3.537 0 0 1 0-5.166 2.44 2.44 0 0 0 .775-1.87 3.55 3.55 0 0 1 1.033-2.62 3.594 3.594 0 0 1 2.62-1.032 2.401 2.401 0 0 0 1.87-.775 3.535 3.535 0 0 1 5.165 0 2.444 2.444 0 0 0 1.869.775 3.532 3.532 0 0 1 3.652 3.652c-.012.35.051.697.184 1.02ZM9.927 7.371a1 1 0 1 0 0 2h.01a1 1 0 0 0 0-2h-.01Zm5.889 2.226a1 1 0 0 0-1.414-1.415L8.184 14.4a1 1 0 0 0 1.414 1.414l6.218-6.217Zm-2.79 5.028a1 1 0 1 0 0 2h.01a1 1 0 1 0 0-2h-.01Z" clip-rule="evenodd"/>
-                </svg>                 
-              </div>
-              <h3 class="mb-2 text-xl font-bold dark:text-white">Sales Tracking:</h3>
-              <p class="text-gray-500 dark:text-gray-400">Record sales transactions to deplete inventory accordingly.</p>
-          </div>
-          <div>
-              <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-[#dbeafe] lg:h-12 lg:w-12 dark:bg-[#1e3a8a]">
-                  <svg class="w-5 h-5 text-[#2563eb] lg:w-6 lg:h-6 dark:text-[#93c5fd]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z"></path><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 0 00-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 10-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 102 0v-.092a4.535 4.535 0 001.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0011 9.092V7.151c.391.127.68.317.843.504a1 1 0 101.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5z" clip-rule="evenodd"></path></svg>
-              </div>
-              <h3 class="mb-2 text-xl font-bold dark:text-white">Reporting:</h3>
-              <p class="text-gray-500 dark:text-gray-400">Generate key reports, including a list of low-stock items and a list of top-selling product.</p>
-          </div>
-          <div>
-          <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-[#dbeafe] lg:h-12 lg:w-12 dark:bg-[#1e3a8a]">
-            <svg class="w-5 h-5 text-[#2563eb] lg:w-6 lg:h-6 dark:text-[#93c5fd]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12.268 6A2 2 0 0 0 14 9h1v1a2 2 0 0 0 3.04 1.708l-.311 1.496a1 1 0 0 1-.979.796H8.605l.208 1H16a3 3 0 1 1-2.83 2h-2.34a3 3 0 1 1-4.009-1.76L4.686 5H4a1 1 0 0 1 0-2h1.5a1 1 0 0 1 .979.796L6.939 6h5.329Z"/>
-              <path d="M18 4a1 1 0 1 0-2 0v2h-2a1 1 0 1 0 0 2h2v2a1 1 0 1 0 2 0V8h2a1 1 0 1 0 0-2h-2V4Z"/>
-            </svg>
+        <div data-aos="fade-right" data-aos-delay="100">
+            <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-[#dbeafe] lg:h-12 lg:w-12 dark:bg-[#1e3a8a]">
+                <svg class="w-5 h-5 text-[#2563eb] lg:w-6 lg:h-6 dark:text-[#93c5fd]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M5 3a2 2 0 00-2 2v2a2 2 0 00.586 1.414L6 10.828V16a2 2 0 002 2h4a2 2 0 002-2v-5.172l2.414-2.414A2 2 0 0017 7V5a2 2 0 00-2-2H5zm2 4h6v2H7V7zm2 4h2v5H9v-5z"/></svg>
+            </div>
+            <h3 class="mb-2 text-xl font-bold dark:text-white">Product Management:</h3>
+            <p class="text-gray-500 dark:text-gray-400">Easily Add, view , update,and delete product information.</p>
+        </div>
+        <div data-aos="fade-right" data-aos-delay="150">
+            <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-[#dbeafe] lg:h-12 lg:w-12 dark:bg-[#1e3a8a]">
+                <svg class="w-5 h-5 text-[#2563eb] lg:w-6 lg:h-6 dark:text-[#93c5fd]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd"></path><path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"></path></svg>
+            </div>
+            <h3 class="mb-2 text-xl font-bold dark:text-white">Inventory Control:</h3>
+            <p class="text-gray-500 dark:text-gray-400">Real-time tracking of stock levels. Automatically update quantities when new stock arrives or a sale is made.</p>
+        </div>
+        <div data-aos="fade-right" data-aos-delay="200">
+            <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-[#dbeafe] lg:h-12 lg:w-12 dark:bg-[#1e3a8a]">
+              <svg class="w-5 h-5 text-[#2563eb] lg:w-6 lg:h-6 dark:text-[#93c5fd]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" d="M20.29 8.567c.133.323.334.613.59.85v.002a3.536 3.536 0 0 1 0 5.166 2.442 2.442 0 0 0-.776 1.868 3.534 3.534 0 0 1-3.651 3.653 2.483 2.483 0 0 0-1.87.776 3.537 3.537 0 0 1-5.164 0 2.44 2.44 0 0 0-1.87-.776 3.533 3.533 0 0 1-3.653-3.654 2.44 2.44 0 0 0-.775-1.868 3.537 3.537 0 0 1 0-5.166 2.44 2.44 0 0 0 .775-1.87 3.55 3.55 0 0 1 1.033-2.62 3.594 3.594 0 0 1 2.62-1.032 2.401 2.401 0 0 0 1.87-.775 3.535 3.535 0 0 1 5.165 0 2.444 2.444 0 0 0 1.869.775 3.532 3.532 0 0 1 3.652 3.652c-.012.35.051.697.184 1.02ZM9.927 7.371a1 1 0 1 0 0 2h.01a1 1 0 0 0 0-2h-.01Zm5.889 2.226a1 1 0 0 0-1.414-1.415L8.184 14.4a1 1 0 0 0 1.414 1.414l6.218-6.217Zm-2.79 5.028a1 1 0 1 0 0 2h.01a1 1 0 1 0 0-2h-.01Z" clip-rule="evenodd"/>
+              </svg>                 
+            </div>
+            <h3 class="mb-2 text-xl font-bold dark:text-white">Sales Tracking:</h3>
+            <p class="text-gray-500 dark:text-gray-400">Record sales transactions to deplete inventory accordingly.</p>
+        </div>
+        <div data-aos="fade-right" data-aos-delay="250">
+            <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-[#dbeafe] lg:h-12 lg:w-12 dark:bg-[#1e3a8a]">
+                <svg class="w-5 h-5 text-[#2563eb] lg:w-6 lg:h-6 dark:text-[#93c5fd]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z"></path><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 0 00-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 10-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 102 0v-.092a4.535 4.535 0 001.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0011 9.092V7.151c.391.127.68.317.843.504a1 1 0 101.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5z" clip-rule="evenodd"></path></svg>
+            </div>
+            <h3 class="mb-2 text-xl font-bold dark:text-white">Reporting:</h3>
+            <p class="text-gray-500 dark:text-gray-400">Generate key reports, including a list of low-stock items and a list of top-selling product.</p>
+        </div>
+        <div data-aos="fade-right" data-aos-delay="300">
+        <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-[#dbeafe] lg:h-12 lg:w-12 dark:bg-[#1e3a8a]">
+          <svg class="w-5 h-5 text-[#2563eb] lg:w-6 lg:h-6 dark:text-[#93c5fd]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12.268 6A2 2 0 0 0 14 9h1v1a2 2 0 0 0 3.04 1.708l-.311 1.496a1 1 0 0 1-.979.796H8.605l.208 1H16a3 3 0 1 1-2.83 2h-2.34a3 3 0 1 1-4.009-1.76L4.686 5H4a1 1 0 0 1 0-2h1.5a1 1 0 0 1 .979.796L6.939 6h5.329Z"/>
+            <path d="M18 4a1 1 0 1 0-2 0v2h-2a1 1 0 1 0 0 2h2v2a1 1 0 1 0 2 0V8h2a1 1 0 1 0 0-2h-2V4Z"/>
+          </svg>
 
-          </div>
-          <h3 class="mb-2 text-xl font-bold dark:text-white">Order Management:</h3>
-          <p class="text-gray-500 dark:text-gray-400">Streamline customer orders with real-time processing and tracking, seamlessly integrating with sales and inventory systems.</p>
         </div>
-        <div>
-          <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-[#dbeafe] lg:h-12 lg:w-12 dark:bg-[#1e3a8a]">
-            <svg class="w-5 h-5 text-[#2563eb] lg:w-6 lg:h-6 dark:text-[#93c5fd]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M13.5 2c-.178 0-.356.013-.492.022l-.074.005a1 1 0 0 0-.934.998V11a1 1 0 0 0 1 1h7.975a1 1 0 0 0 .998-.934l.005-.074A7.04 7.04 0 0 0 22 10.5 8.5 8.5 0 0 0 13.5 2Z"/>
-              <path d="M11 6.025a1 1 0 0 0-1.065-.998 8.5 8.5 0 1 0 9.038 9.039A1 1 0 0 0 17.975 13H11V6.025Z"/>
-            </svg>
-
-          </div>
-          <h3 class="mb-2 text-xl font-bold dark:text-white">Analytics:</h3>
-          <p class="text-gray-500 dark:text-gray-400">Gain insights with customizable reports and visualizations to monitor sales trends and inventory performance effectively.</p>
-        </div>
-        </div>
+        <h3 class="mb-2 text-xl font-bold dark:text-white">Order Management:</h3>
+        <p class="text-gray-500 dark:text-gray-400">Streamline customer orders with real-time processing and tracking, seamlessly integrating with sales and inventory systems.</p>
       </div>
-</section>
+      <div data-aos="fade-right" data-aos-delay="350">
+        <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-[#dbeafe] lg:h-12 lg:w-12 dark:bg-[#1e3a8a]">
+          <svg class="w-5 h-5 text-[#2563eb] lg:w-6 lg:h-6 dark:text-[#93c5fd]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M13.5 2c-.178 0-.356.013-.492.022l-.074.005a1 1 0 0 0-.934.998V11a1 1 0 0 0 1 1h7.975a1 1 0 0 0 .998-.934l.005-.074A7.04 7.04 0 0 0 22 10.5 8.5 8.5 0 0 0 13.5 2Z"/>
+            <path d="M11 6.025a1 1 0 0 0-1.065-.998 8.5 8.5 0 1 0 9.038 9.039A1 1 0 0 0 17.975 13H11V6.025Z"/>
+          </svg>
+
+        </div>
+        <h3 class="mb-2 text-xl font-bold dark:text-white">Analytics:</h3>
+        <p class="text-gray-500 dark:text-gray-400">Gain insights with customizable reports and visualizations to monitor sales trends and inventory performance effectively.</p>
+      </div>
+      </div>
+    </div>
+  </section>
 
 
-<blockquote class="text-xl italic font-semibold text-gray-900 dark:text-white py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+  <blockquote class="text-xl italic font-semibold text-gray-900 dark:text-white py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
     <svg class="w-8 h-8 text-gray-400 dark:text-gray-600 mb-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
-        <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z"/>
+      <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z"/>
     </svg>
     <p>"Marvin Electricals Inventory Systems will help grow retail and wholesale distribution of electrical products faster than  manually using spreadsheets and handwritten records."</p>
     <span class="w-full inline-block h-8 text-gray-400 dark:text-gray-600 mb-4 text-right"> -- Idika (Frontend Developer) </span>
-</blockquote>
+  </blockquote>
 
-
-<section class="border-t border-white dark:border-gray-600" id="about">
+  <section class="border-t border-white dark:border-gray-600" id="about">
     <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
-        <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-            <h2 class="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 dark:text-white">Reducing the impact of miscalculation by 90%</h2>
-            <p class="mb-4">Marvin's Electronics Inventory System drives innovation and efficiency. We are data analysts, system architects, and automation experts. Innovators and efficiency drivers. Nimble enough to adapt swiftly and deliver precise solutions, yet robust enough to meet your inventory and sales management needs with unmatched accuracy.</p>
-            <p>Committed to streamlining operations, reducing errors by 90%, and empowering your store with real-time stock tracking and insightful sales trends for smarter decision-making.</p>
-        </div>
-        <div class="grid grid-cols-2 gap-4 mt-8">
-            <img loading="lazy" class="w-full rounded-lg" src="https://i.pinimg.com/736x/cc/50/3a/cc503a22c75c54b486e3ba4fdc63847c.jpg" alt="office content 1">
-            <img loading="lazy" class="mt-4 w-full lg:mt-10 rounded-lg" src="https://i.pinimg.com/736x/7b/a2/47/7ba247ffcedd571e813f86af638c7bf0.jpg" alt="office content 2">
-        </div>
+      <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400" data-aos="fade-right">
+          <h2 class="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 dark:text-white">Reducing the impact of miscalculation by 90%</h2>
+          <p class="mb-4">Marvin's Electronics Inventory System drives innovation and efficiency. We are data analysts, system architects, and automation experts. Innovators and efficiency drivers. Nimble enough to adapt swiftly and deliver precise solutions, yet robust enough to meet your inventory and sales management needs with unmatched accuracy.</p>
+          <p>Committed to streamlining operations, reducing errors by 90%, and empowering your store with real-time stock tracking and insightful sales trends for smarter decision-making.</p>
+      </div>
+      <div class="grid grid-cols-2 gap-4 mt-8">
+        <img loading="lazy" class="w-full rounded-lg" src="https://i.pinimg.com/736x/cc/50/3a/cc503a22c75c54b486e3ba4fdc63847c.jpg" alt="office content 1" data-aos="fade-up" data-aos-delay="300">
+        <img loading="lazy" class="mt-4 w-full lg:mt-10 rounded-lg" src="https://i.pinimg.com/736x/7b/a2/47/7ba247ffcedd571e813f86af638c7bf0.jpg" alt="office content 2" data-aos="fade-up" data-aos-delay="500">
+      </div>
     </div>
-</section>
+  </section>
 
-<section class="bg-white dark:bg-gray-900">
+  <section class="flex justify-center items-center text-center">
     <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-        <div class="max-w-screen-md">
-            <h2 class="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 dark:text-white">Less Labour, More Efficiency.</h2>
-            <p class="mb-8 font-light text-gray-500 sm:text-xl dark:text-gray-400">Facilitating business continuity through automated stock tracking, the system is reducing stock timeout durations, thereby keeping the business consistently updated.</p>
-            <div class="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
-                <a href="marvin.html" class="inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-center text-white bg-[#1d4ed8] rounded-lg hover:bg-[#1e40af] focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
-                    Get started
-                </a>
-                <a href="#" class="inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
-                    <svg class="mr-2 -ml-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm2 3h8a1 1 0 010 2H6a1 1 0 010-2zm0 3h8a1 1 0 010 2H6a1 1 0 010-2zm0 3h5a1 1 0 010 2H6a1 1 0 010-2z"/>
-                    </svg>
-                    Documentation
-                </a>  
-            </div>
-        </div>
+      <div class="max-w-screen-md">
+        <h2 class="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 dark:text-white">Less Labour, More Efficiency.</h2>
+        <p class="mb-8 font-light text-gray-500 sm:text-xl dark:text-gray-400">Facilitating business continuity through automated stock tracking, the system is reducing stock timeout durations, thereby keeping the business consistently updated.</p>
+          <div class="flex flex-col justify-center space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
+              <a href="marvin.html" class="inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-center text-white bg-[#1d4ed8] rounded-lg hover:bg-[#1e40af] focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+                  Get started
+              </a>
+              <a href="#" class="inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+                  <svg class="mr-2 -ml-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm2 3h8a1 1 0 010 2H6a1 1 0 010-2zm0 3h8a1 1 0 010 2H6a1 1 0 010-2zm0 3h5a1 1 0 010 2H6a1 1 0 010-2z"/>
+                  </svg>
+                  Documentation
+              </a>  
+          </div>
+      </div>
     </div>
-</section>
+  </section>
 
-
-<script src="scripts/utils/sidebar.js"></script>
-
+  <script src="scripts/utils/sidebar.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
-  </html>
+</html>
