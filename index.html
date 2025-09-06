@@ -76,8 +76,9 @@
         box-sizing: border-box;
       }
       /* Enable smooth scrolling for the entire page */
-      html {
+      body,html {
         scroll-behavior: smooth;
+        overflow-x: hidden;
       }
 
       /* Active class styling */
@@ -90,6 +91,14 @@
         .active {
           background-color: transparent;
           color: #1d4ed8; /* Matches text-blue-700 */
+        }
+      }
+
+      /* Add to your <style> tag */
+      @media (max-width: 768px) {
+        .flex.items-center.gap-2.lg\:gap-4 {
+          flex-wrap: wrap;
+          justify-content: center;
         }
       }
 
@@ -566,52 +575,54 @@
         </div>
       </section>
 
-      <blockquote
-        class="flex gap-2 py-16 text-2xl text-slate-500 md:text-3xl lg:pt-0 lg:text-5xl dark:text-slate-400 pb-8 justify-center"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 20 20"
-          role="img"
-          fill="currentColor"
-          class="-mt-1 h-10 text-slate-300 md:-mt-3 md:h-16 lg:h-24 dark:text-slate-800"
+      <div class="max-w-screen-xl mx-auto px-4">
+        <blockquote
+          class="flex gap-2 py-16 text-2xl text-slate-500 md:text-3xl lg:pt-0 lg:text-5xl dark:text-slate-400 pb-8 justify-center"
         >
-          <path
-            d="M7.27273 16.3833H0L5.30713 4H10.0737L7.27273 16.3833ZM17.199 16.3833H9.92629L15.2334 4H20L17.199 16.3833Z"
-          ></path>
-        </svg>
-        <span class="flex flex-col">
-          <span class="leading-[1.15]"><em>automatic</em> </span>
-          <span class="flex items-center gap-2 leading-[1.15] lg:gap-4">
-            <span
-              class="mt-1 h-0.5 w-8 rounded-full bg-slate-400 lg:h-1 lg:w-24 dark:bg-slate-600"
-            ></span>
-            <span>
-              <strong class="font-extrabold text-slate-600 dark:text-slate-300"
-                >reliable
-              </strong>
-              and
-              <strong class="font-extrabold text-slate-600 dark:text-slate-300"
-                >fast,</strong
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            role="img"
+            fill="currentColor"
+            class="-mt-1 h-10 text-slate-300 md:-mt-3 md:h-16 lg:h-24 dark:text-slate-800"
+          >
+            <path
+              d="M7.27273 16.3833H0L5.30713 4H10.0737L7.27273 16.3833ZM17.199 16.3833H9.92629L15.2334 4H20L17.199 16.3833Z"
+            ></path>
+          </svg>
+          <span class="flex flex-col">
+            <span class="leading-[1.15]"><em>automatic</em> </span>
+            <span class="flex items-center gap-2 leading-[1.15] lg:gap-4">
+              <span
+                class="mt-1 h-0.5 w-8 rounded-full bg-slate-400 lg:h-1 lg:w-24 dark:bg-slate-600"
+              ></span>
+              <span>
+                <strong class="font-extrabold text-slate-600 dark:text-slate-300"
+                  >reliable
+                </strong>
+                and
+                <strong class="font-extrabold text-slate-600 dark:text-slate-300"
+                  >fast,</strong
+                >
+              </span>
+              <span
+                class="mt-1 h-0.5 w-6 rounded-full bg-slate-400 lg:h-1 lg:w-14 dark:bg-slate-600"
+              ></span>
+            </span>
+            <span class="leading-[1.15]">
+              boosts your
+              <strong
+                class="relative font-extrabold text-slate-600 dark:text-slate-300"
+              >
+                <span
+                  class="absolute -left-0.5 bottom-0 right-0 top-1 z-[-1] rounded-md bg-slate-100 px-1 lg:-left-1.5 lg:-right-0.5 lg:bottom-0 lg:top-2 dark:bg-slate-800"
+                ></span
+                >efficiency.</strong
               >
             </span>
-            <span
-              class="mt-1 h-0.5 w-6 rounded-full bg-slate-400 lg:h-1 lg:w-14 dark:bg-slate-600"
-            ></span>
           </span>
-          <span class="leading-[1.15]">
-            boosts your
-            <strong
-              class="relative font-extrabold text-slate-600 dark:text-slate-300"
-            >
-              <span
-                class="absolute -left-0.5 bottom-0 right-0 top-1 z-[-1] rounded-md bg-slate-100 px-1 lg:-left-1.5 lg:-right-0.5 lg:bottom-0 lg:top-2 dark:bg-slate-800"
-              ></span
-              >efficiency.</strong
-            >
-          </span>
-        </span>
-      </blockquote>
+        </blockquote>
+      </div>
 
       <section class="pb-12" data-aos="fade-up">
         <div
@@ -889,7 +900,7 @@
     </section>
 
     <section id="contact" class="pb-36">
-      <!--section class="py-8">
+      <section class="py-8">
         <div class="py-8 lg:py-16 px-4 mx-auto ">
           <h2
             class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white"
@@ -1021,7 +1032,7 @@
             </div>
           </div>
         </div>
-      </section-->
+      </section>
     </section>
 
     <footer
