@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   new TypeIt("#hero-text", {
-    strings: ['Reliable Solutions Through','<span class="text-green-800 dark:text-green-500 ">Software Engineering...</span>' ],
+    strings: ['Reliable Solutions Through <span class="text-green-800 dark:text-green-500 ">Software Engineering...</span>' ],
     speed: 100,
     startDelay: 100,
     duration: 700,
