@@ -1,0 +1,11 @@
+{
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/node",
+      "config": {
+        "buildCommand": "npm install -g tailwindcss && chmod +x node_modules/.bin/tailwindcss && tailwindcss -i ./input.css -o ./output.css --minify"
+      }
+    }
+  ]
+}
